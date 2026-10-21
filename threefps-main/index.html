@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Containment - Menu Principal</title>
-    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -354,15 +354,18 @@
         </div>
     </div>
 
+    <!-- MAPA DE IMPORTAÇÃO DO THREE.JS (CORRIGIDO) -->
     <script type="importmap">
       {
         "imports": {
-          "three": "./build/three.module.js",
-          "three/addons/": "./examples/jsm/"
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
         }
       }
     </script>
-    <script type="module" src="./src/main.js"></script>
+
+    <!-- CARREGAMENTO DO SCRIPT PRINCIPAL DO JOGO -->
+    <script type="module" src="./js/main.js"></script>
 
     <!-- Script de Controle do Menu, Seleção dos Mapas e Avanço no 6º Round -->
     <script>
